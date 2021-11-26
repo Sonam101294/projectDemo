@@ -18,6 +18,7 @@ global class LightningLoginFormController {
     
     @AuraEnabled
     public static Boolean getIsUsernamePasswordEnabled() {
+        //deploying code from my dev hub
         Auth.AuthConfiguration authConfig = getAuthConfig();
         return authConfig.getUsernamePasswordEnabled();
     }
