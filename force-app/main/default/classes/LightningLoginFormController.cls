@@ -6,6 +6,7 @@ global class LightningLoginFormController {
 
     @AuraEnabled
     public static String login(String username, String password, String startUrl) {
+        //try deploying
         try{
             ApexPages.PageReference lgn = Site.login(username, password, startUrl);
             aura.redirect(lgn);
